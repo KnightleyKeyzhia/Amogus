@@ -1,19 +1,19 @@
 import Phaser from 'phaser'
 
-import AmongUsScene from './scenes/AmongUsScene'
+import CollectingStarsScenes from './scenes/CollectingStarsScenes'
 
 const config = {
 	type: Phaser.AUTO,
 	parent: 'app',
-	width: 1920,
-	height: 1080,
+	width: 800,
+	height: 600,
 	physics: {
 		default: 'arcade',
 		arcade: {
 			gravity: { y: 200 },
 		},
 	},
-	scene: [AmongUsScene],
+	scene: [CollectingStarsScenes],
 }
 
 export default new Phaser.Game(config)
